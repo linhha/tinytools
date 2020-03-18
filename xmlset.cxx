@@ -71,13 +71,10 @@ int main(int argc, char** argv) {
     cout << streamer.CStr();
   } else {
     for (int iarg = 3; iarg < argc; ++iarg) {
-      auto at =  tagElem->Attribute(argv[iarg]);
-      if (!at) {
-        cout << "Input XML file " << xmlCfg << " has no attribute " << argv[iarg] << endl;
-        return EXIT_FAILURE;
-      } 
-      cout << at << " ";
+        auto at_v = wordsFromStr(argv[iarg]);
+        tagElem->SetAttribute(at_v[0].c_str(), at_v[1].c_str());
     }
   }
+  xmlDoc.SaveFile(xmlCfg);
   return EXIT_SUCCESS;
 }

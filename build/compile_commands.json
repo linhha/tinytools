@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/liha/workspace/tinytools/build",
+  "command": "/usr/bin/g++-9   -I/home/liha/.local/include  -g   -std=gnu++14 -o CMakeFiles/xmlset.dir/xmlset.cxx.o -c /home/liha/workspace/tinytools/xmlset.cxx",
+  "file": "/home/liha/workspace/tinytools/xmlset.cxx"
+},
+{
+  "directory": "/home/liha/workspace/tinytools/build",
+  "command": "/usr/bin/g++-9   -I/home/liha/.local/include  -g   -std=gnu++14 -o CMakeFiles/xmlprn.dir/xmlprn.cxx.o -c /home/liha/workspace/tinytools/xmlprn.cxx",
+  "file": "/home/liha/workspace/tinytools/xmlprn.cxx"
+}
+]

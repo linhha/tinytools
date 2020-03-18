@@ -10,6 +10,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # add the executable
 include_directories("/home/liha/.local/include")
 link_directories("/home/liha/.local/lib")
+link_libraries(tinyxml2)
 
 add_executable(xmlprn xmlprn.cxx)
-target_link_libraries(xmlprn tinyxml2)
+add_executable(xmlset xmlset.cxx)
